@@ -23,6 +23,7 @@ export default function Dashboard() {
                     <Route  path="/candidatelists" component={CandidateList}/>
                     <Route  path="/jobadvertisementlists" component={JobAdvertisementList}/>
                     <Route  path="/addjobadvertisements" component={AddJobAdvertisement}/>
+                    
                      </Grid.Column>
                 </Grid.Row>
             </Grid> 
