@@ -1,15 +1,20 @@
 import './App.css';
 import 'semantic-ui-css/semantic.min.css'
-import { Container } from 'semantic-ui-react';
-import EmployerList from './pages/EmployerList';
+import Navi from '../src/layouts/Navi'
+import {Container} from "semantic-ui-react"
+import Dashboard from './layouts/Dashboard';
+import AddJobAdvertisement from './components/AddJobAdvertisement';
 
 function App() {
+
   return (
     <div className="App">
-   <Container>
-<EmployerList></EmployerList>
-   </Container>  
    
+    <Navi></Navi>
+   <Container  className="main">
+     <Dashboard></Dashboard>
+   </Container>
+ 
     </div>
   );
 }

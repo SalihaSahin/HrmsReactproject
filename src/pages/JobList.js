@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {  Table } from "semantic-ui-react";
 import JobTitleService from "../services/jobTitleService";
+import { Button, Card, Image } from 'semantic-ui-react'
 
 export default function JobList() {
 
@@ -12,23 +13,30 @@ export default function JobList() {
  },[])
   return (
     <div>
-        <Table celled>
-        <Table.Header> 
-          <Table.Row>
-          <Table.HeaderCell>Title Name</Table.HeaderCell>
-            <Table.HeaderCell>Description</Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
-
-        <Table.Body>
-          {jobLists.map((jobList) => (
-            <Table.Row key={jobList.id}>
-                 <Table.Cell>{jobList.titleName}</Table.Cell>
-              <Table.Cell >{jobList.description}</Table.Cell>
-            </Table.Row>
-          ))}
-        </Table.Body>
-      </Table>
+      
+      <Card.Group>
+      {jobLists.map((jobList) => (
+    <Card>
+      <Card.Content key ={jobList.id}>
+        <Card.Header>{jobList.titleName}</Card.Header>
+        <Card.Meta>{jobList.description}</Card.Meta>
+        <Card.Description>
+          Steve wants to add you to the group <strong>best friends</strong>
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <div className='ui two buttons'>
+          <Button basic color='green'>
+            İncele
+          </Button>
+         
+        </div>
+      </Card.Content>
+      
+    </Card>
+      ))}
+  </Card.Group>
+  
     </div>
   )
 }

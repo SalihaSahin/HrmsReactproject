@@ -18,5 +18,8 @@ export default class JobAdvertisementService{
    getByIsActive(){
        return axios.get("http://localhost:8080/api/jobadvertisements/getByIsActive")
    }
+   addJobAdvertisement(jobAdvertisement) {
+    return axios.post("http://localhost:8080/api/jobadvertisements/add", jobAdvertisement);
+  }
 
 }
