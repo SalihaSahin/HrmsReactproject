@@ -16,7 +16,7 @@ export default function JobList() {
       
       <Card.Group>
       {jobLists.map((jobList) => (
-    <Card>
+    <Card> 
       <Card.Content key ={jobList.id}>
         <Card.Header>{jobList.titleName}</Card.Header>
         <Card.Meta>{jobList.description}</Card.Meta>
@@ -29,7 +29,7 @@ export default function JobList() {
           <Button basic color='green'>
             İncele
           </Button>
-         
+          
         </div>
       </Card.Content>
       

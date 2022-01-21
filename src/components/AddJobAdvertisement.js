@@ -22,7 +22,7 @@ export default function AddJobAdvertisement() {
 
       
     }, []);
-
+ 
     
     return (
     <div>
@@ -192,7 +192,7 @@ export default function AddJobAdvertisement() {
                         </Form.Group>
 
                         
-                        <Button  handleReset={handleReset} className="is-tanimi" type='submit' color='orange' disabled={!dirty || isSubmitting}  
+                        <Button   className="is-tanimi" type='submit' color='orange' disabled={!dirty || isSubmitting}  
                         >Gönder
                         </Button>
 

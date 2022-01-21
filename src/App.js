@@ -4,7 +4,7 @@ import Navi from '../src/layouts/Navi'
 import {Container} from "semantic-ui-react"
 import Dashboard from './layouts/Dashboard';
 import AddJobAdvertisement from './components/AddJobAdvertisement';
-
+ 
 function App() {
 
   return (

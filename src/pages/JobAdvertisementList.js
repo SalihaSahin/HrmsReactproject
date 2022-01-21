@@ -15,7 +15,7 @@ export default function JobAdvertisementList() {
     jobAdvertisementService.getByIsActive().then((result) => {
       setjobAdvertisementLists(result.data.data);
     });
-  }, []);  
+  }, []);   
 
   return (
     <div>

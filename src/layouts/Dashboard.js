@@ -9,7 +9,7 @@ import JobAdvertisementList from '../pages/JobAdvertisementList';
 import AddJobAdvertisement from '../components/AddJobAdvertisement';
 
 export default function Dashboard() {
-    return (
+    return ( 
         <div>
             <Grid>
                 <Grid.Row>

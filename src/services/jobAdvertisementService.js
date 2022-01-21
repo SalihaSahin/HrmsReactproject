@@ -10,7 +10,7 @@ export default class JobAdvertisementService{
     return axios.get("http://localhost:8080/api/jobadvertisements/getByAppealDeadline")
 
    }
-
+ 
    getByCompanyName(params){
        return axios.get(`http://localhost:8080/api/jobadvertisements/getAllOpenedPositionByCompanyName?employerId=${params}`)
    }

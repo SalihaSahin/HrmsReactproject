@@ -17,7 +17,7 @@ function handleSignIn(){
   setAuthenticated(true)
 }
     return (
-        <div>
+        <div> 
       <Menu inverted >
       <Container>
       <Menu.Item

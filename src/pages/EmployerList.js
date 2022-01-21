@@ -11,7 +11,7 @@ export default function EmployerList() {
         let employerService= new EmployerService()
         employerService.getEmployers().then(results=>setEmployers(results.data.data))
     },[])
-
+ 
     return (
         <div>
             <Table celled >

@@ -18,7 +18,7 @@ export default function Categories() {
         <Menu.Item
           name='Job Seeker List' 
           as={NavLink} 
-          to="/candidatelists" 
+          to="/candidatelists"  
        />
         <Menu.Item
           name='Job Advertisement List' 
